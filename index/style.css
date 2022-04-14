@@ -9,14 +9,12 @@ body {
   margin: 0%;
 }
 
-a:link, a:visited, a:hover, a:active {
-  color: #584421;
-  text-decoration: none;
-  padding-right: 3%;
+img {
+  width: 200px;
 }
 
 input[type="button"] {
-  font-size: 30px;
+  font-size: 24px;
   font-family: Arial;
   border: none;
   border-width: 3px;
@@ -42,31 +40,30 @@ input[type="button"]:active{
   margin-left: 25px;
 }
 
-
-#background {
-  width: 100%;
-  height: 75%;
-}
-
 #menuBar {
   background-color: #ECECEC;
   height: 10%;
+  border-bottom: solid;
+  border-color:#584421;
+  border-width: 5px;
 }
 
 #menu {
   position: absolute;
-  left: 375px;
-  top: 5%;
+  left: 50%;
+  top: 3%;
   width: 70%;
 }
 
 #logo {
-  padding-left: 2%;
+  padding-left: 6%;
 }
 
-#body {
+#changeHTML {
   position: absolute;
-  top: 22%;
+  top: 14%;
+  border: none;
+  display:block;
 }
 
 #order {
