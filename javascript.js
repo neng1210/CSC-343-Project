@@ -24,9 +24,21 @@ function displayOrder() {
   document.getElementById("total").innerHTML = totalStr;
 }
 
+function orderNumber() {
+  orderNumber = Math.floor(1000 + Math.random() * 9000);
+  string = "Your Order Number is :<br>" + orderNumber;
+  document.getElementById("tyNum").innerHTML = string;
+}
+
 function creditCard() {
-  string = "Insert a Credit Card."
+  string = 'Insert a Credit Card.';
   document.getElementById("confirm").innerHTML = string;
+  document.getElementById("finish").style.visibility = "visible";
+}
+
+function thankYou() {
+  document.getElementById("finish").style.visibility = "hidden";
+  window.location.href = "../index/index.html";
 }
 
 function goToHTML(page){

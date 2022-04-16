@@ -116,3 +116,33 @@ input[type="button"]:active{
 #option,#orderButton {
   font-size: 30px;
 }
+
+#finish {
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  font-size: 40px;
+  font-family:sans-serif;
+  text-align: center;
+  visibility: hidden;
+}
+
+#thank {
+  width: 100%;
+  height: 60%;
+}
+
+.tyText {
+  position: absolute;
+  top: 37%;
+  left: 22%;
+  font-size: 40px;
+  font-family:sans-serif;
+  text-align: center;
+}
+
+#tyNum {
+  position: absolute;
+  top: 55%;
+  left: 29%;
+}
