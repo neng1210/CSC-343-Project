@@ -7,20 +7,6 @@
     position: absolute;
   }
   
-  #order {
-    position: absolute;
-    top: 0%;
-    left: 75%;
-    width: 25%;
-    height: 100%;
-    background-color: #584421;
-    color: #E8B34D;
-    font-size: 25px;
-    font-weight: 5px;
-    font-family:sans-serif;
-    text-align: center;
-  }
-  
   .foodArea {
     text-align: center;
     vertical-align:middle;
