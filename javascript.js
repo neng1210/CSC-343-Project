@@ -167,6 +167,11 @@ function thankYou() {
   window.location.href = "../checkout/thankYouPage.html";
 }
 
+function goToCheckout() {
+  document.getElementById("cButton").style.visibility = "hidden";
+  window.location.href = "../checkout/checkout.html";
+}
+
 function delayAndBack(){
   //Clear out order
   order = [];
