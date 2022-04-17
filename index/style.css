@@ -94,3 +94,13 @@ input[type="button"]:active{
   float: right;
   border: solid;
 }
+
+#cButton {
+  position: absolute;
+  top: 80%;
+  right: 7%;
+  color: #E8B34D;
+  font-size: 25px;
+  font-family: sans-serif;
+  visibility: visible;
+}
