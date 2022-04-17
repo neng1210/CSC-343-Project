@@ -2,7 +2,6 @@
   Authors: Nicholas Eng, Ryu Funakoshiya, Joshua Kantarges
   This contains javascript functions so the page can change dynamically
 */
-// global data structure to hold order
 
 // just some hard coded thing so i can test checkout
 // will probably be changed to different data struture later
