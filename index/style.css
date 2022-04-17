@@ -105,3 +105,13 @@ input[type="button"]:active{
   position: absolute;
   top: 22%;
 }
+
+#cButton {
+  position: absolute;
+  top: 80%;
+  right: 7%;
+  color: #E8B34D;
+  font-size: 25px;
+  font-family: sans-serif;
+  visibility: visible;
+}

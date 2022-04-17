@@ -3,11 +3,11 @@
     width: 100%;
     height: 75%;
   }
-  
+
   #body {
     position: absolute;
   }
-  
+
   #order {
     position: absolute;
     top: 0%;
@@ -21,7 +21,7 @@
     font-family:sans-serif;
     text-align: center;
   }
-  
+
   .foodArea {
     text-align: center;
     vertical-align:middle;
@@ -33,7 +33,7 @@
     object-fit: contain;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   }
-  
+
   #nigiri {
     position: absolute;
     width: 17%;
@@ -41,7 +41,7 @@
     top:15%;
     left:45%;
   }
-  
+
   #handRolls {
     position: absolute;
     width: 17%;
@@ -49,7 +49,7 @@
     top:15%;
     left:25%;
   }
-  
+
   #rolls {
     position: absolute;
     width: 17%;
@@ -65,8 +65,8 @@
     top:42%;
     left:11%;
   }
-  
-  
+
+
   #specials {
     position: absolute;
     width: 17%;
@@ -74,7 +74,7 @@
     top:60%;
     left:45%;
   }
-  
+
   #desserts {
     position: absolute;
     width: 17%;
@@ -82,7 +82,7 @@
     top:60%;
     left:25%;
   }
-  
+
   #drinks {
     position: absolute;
     width: 17%;
