@@ -1,8 +1,12 @@
 body{
     background-image: url("../images/Main_Body.jpg");
+    font-size: 25px;
+    font-family: sans-serif;
+    color:#584421;
 }
 
 #center{
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -15,6 +19,4 @@ body{
 
 #touchImage{
     width: 100pt;
-    position: relative;
-    left: 100pt;
 }

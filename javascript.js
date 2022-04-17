@@ -10,6 +10,10 @@ let prices = {}
 prices["roll"] = 4;
 prices["nigiri"] = 5;
 
+function switchMainMenu(){
+  window.location.href = "../index/index.html";
+}
+
 function displayOrder() {
   string = "Your Order";
   total = 0;
@@ -37,7 +41,13 @@ function creditCard() {
 
 function thankYou() {
   document.getElementById("finish").style.visibility = "hidden";
-  window.location.href = "../index/index.html";
+  window.location.href = "../checkout/thankYouPage.html";
+}
+
+function delayAndBack(){
+  setTimeout(function() {
+    window.location.href = "../welcome/welcome.html";
+  }, 6000);
 }
 
 function goToHTML(page){
