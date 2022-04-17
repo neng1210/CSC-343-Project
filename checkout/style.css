@@ -1,0 +1,148 @@
+/*
+  Authors: Nicholas Eng, Ryu Funakoshiya, Joshua Kantarges
+  CSS for styling page
+*/
+
+body {
+  background-image: url("../images/Pattern_Background.jpg");
+  background-size: auto;
+  margin: 0%;
+}
+
+#body {
+  position: absolute;
+  top: 14%;
+}
+
+img {
+  width: 200px;
+}
+
+input[type="button"] {
+  font-size: 24px;
+  font-family: Arial;
+  border: none;
+  border-width: 3px;
+  background-color: transparent;
+  color: #584421;
+  margin-left: 25px;
+}
+input[type="button"]:hover{
+  border: none;
+  border-radius: 20px;
+  border-width: 3px;
+  background-color: #584421;
+  color: white;
+  margin-left: 25px;
+}
+
+input[type="button"]:active{
+  border: none;
+  border-radius: 20px;
+  border-width: 3px;
+  background-color: white;
+  color: #584421;
+  margin-left: 25px;
+}
+
+#menuBar {
+  background-color: #ECECEC;
+  height: 10%;
+  border-bottom: solid;
+  border-color:#584421;
+  border-width: 5px;
+}
+
+#menu {
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  width: 70%;
+}
+
+#logo {
+  padding-left: 6%;
+}
+
+#changeHTML {
+  position: absolute;
+  top: 14%;
+  border: none;
+  display:block;
+}
+
+.confirmArea {
+  background-color: red;
+}
+
+#background {
+  width: 100%;
+  height: 75%;
+}
+
+#order {
+  position: absolute;
+  top: 0%;
+  left: 75%;
+  width: 25%;
+  height: 100%;
+  background-color: #584421;
+  color: #E8B34D;
+  font-size: 25px;
+  font-family:sans-serif;
+  text-align: center;
+}
+
+#total {
+  position: absolute;
+  top: 90%;
+  right: 4%;
+  font-size: 25px;
+  font-family:sans-serif;
+  text-align: center;
+  color: #E8B34D;
+}
+
+#confirm {
+  position: absolute;
+  top: 35%;
+  left: 18%;
+  font-size: 50px;
+  font-family:sans-serif;
+  text-align: center;
+  color: #584421;
+}
+
+#option,#orderButton {
+  font-size: 30px;
+}
+
+#finish {
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  font-size: 40px;
+  font-family:sans-serif;
+  text-align: center;
+  visibility: hidden;
+}
+
+#thank {
+  width: 100%;
+  height: 60%;
+}
+
+.tyText {
+  position: absolute;
+  top: 37%;
+  left: 22%;
+  font-size: 40px;
+  font-family:sans-serif;
+  text-align: center;
+}
+
+#tyNum {
+  position: absolute;
+  top: 55%;
+  left: 29%;
+}
