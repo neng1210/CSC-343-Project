@@ -69,8 +69,12 @@ input[type="button"]:active{
   position: absolute;
   left: 75%;
   width: 25%;
-  min-height: 100%;
-  background-color: #584421;
+  height:89.2%;
+  background-color: rgba(88, 68, 33, 0.9);
+}
+
+#orderTitle {
+  margin-top: 70px;
   color: #E8B34D;
   font-size: 25px;
   font-family:sans-serif;
@@ -107,11 +111,10 @@ input[type="button"]:active{
 }
 
 #cButton {
-  position: absolute;
-  top: 80%;
-  right: 7%;
+  margin-top: 200px;
+  margin-right:10px;
   color: #E8B34D;
-  font-size: 25px;
-  font-family: sans-serif;
-  visibility: visible;
+  font-size: 40px;
+  font-family:sans-serif;
+  text-align: center;
 }

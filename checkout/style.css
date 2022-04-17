@@ -3,8 +3,54 @@
   CSS for styling page
 */
 
+body {
+  background-image: url("../images/Pattern_Background.jpg");
+  background-size: auto;
+  margin: 0%;
+}
+
 #body {
   position: absolute;
+  top: 14%;
+}
+
+img {
+  width: 200px;
+}
+
+input[type="button"] {
+  font-size: 24px;
+  font-family: Arial;
+  border: none;
+  border-width: 3px;
+  background-color: transparent;
+  color: #584421;
+  margin-left: 25px;
+}
+input[type="button"]:hover{
+  border: none;
+  border-radius: 20px;
+  border-width: 3px;
+  background-color: #584421;
+  color: white;
+  margin-left: 25px;
+}
+
+input[type="button"]:active{
+  border: none;
+  border-radius: 20px;
+  border-width: 3px;
+  background-color: white;
+  color: #584421;
+  margin-left: 25px;
+}
+
+#menuBar {
+  background-color: #ECECEC;
+  height: 10%;
+  border-bottom: solid;
+  border-color:#584421;
+  border-width: 5px;
 }
 
 #menu {
