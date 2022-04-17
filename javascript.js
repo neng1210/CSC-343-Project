@@ -12,24 +12,24 @@ prices["nigiri"] = 5;
 
 var foodItems={
   "rolls":{
-      "tunaRoll":{
-        "name": "Tuna Roll",
-        "price": 4.99,
-        "description": "A simple sushi roll with only raw tuna encased in sushi rice, rolled within one sheet of nori.",
-        "image": "images/rolls/tunaRoll.jpg"
-      },
-      "pickledDaikonRoll":{
-        "name": "Pickled Daikon Roll",
-        "price": 3.99,
-        "description": "Sweet and sourness of the pickled daikon mixed with the sushi rice and roasted nori sheet is not like anything else in the world",
-        "image": "images/rolls/pickledDaikonRoll.jpg"
-      },
-      "futomaki":{
-        "name": "Futomaki",
-        "price": 6.99,
-        "description": "Futomaki is like a normal maki roll but bigger.",
-        "image": "images/rolls/futomaki.jpg"
-      },
+    "tunaRoll":{
+      "name": "Tuna Roll",
+      "price": 4.99,
+      "description": "A simple sushi roll with only raw tuna encased in sushi rice, rolled within one sheet of nori.",
+      "image": "images/rolls/tunaRoll.jpg"
+    },
+    "pickledDaikonRoll":{
+      "name": "Pickled Daikon Roll",
+      "price": 3.99,
+      "description": "Sweet and sourness of the pickled daikon mixed with the sushi rice and roasted nori sheet is not like anything else in the world",
+      "image": "images/rolls/pickledDaikonRoll.jpg"
+    },
+    "futomaki":{
+      "name": "Futomaki",
+      "price": 6.99,
+      "description": "Futomaki is like a normal maki roll but bigger.",
+      "image": "images/rolls/futomaki.jpg"
+    },
   },
   "handRolls":{
     "temaki":{
