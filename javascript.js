@@ -5,10 +5,7 @@
 
 // just some hard coded thing so i can test checkout
 // will probably be changed to different data struture later
-order = ["roll", "roll", "nigiri"]
-let prices = {}
-prices["roll"] = 4;
-prices["nigiri"] = 5;
+order = [];
 
 var foodItems={
   "rolls":{
@@ -183,4 +180,46 @@ function delayAndBack(){
 function goToHTML(page){
   var element = document.getElementById("changeHTML");
   element.src = page;
+}
+
+function populateFoodPage(category){
+  var categoryItems;
+
+  switch (category) {
+    case "rolls":
+      categoryItems = foodItems.rolls;
+      break;
+    case "handRolls":
+      categoryItems = foodItems.handRolls;
+      break;
+    case "nigiri":
+      categoryItems = foodItems.nigiri;
+      break;
+    case "drinks":
+      categoryItems = foodItems.drinks;
+      break;
+    case "desserts":
+      categoryItems = foodItems.desserts;
+      break;
+    case "specials":
+      categoryItems = foodItems.specials;
+      break;
+  }
+
+  for(const food in categoryItems){
+    var newItem = `
+      <div id="foodEntry">
+        <a href="addItemToOrder(${categoryItems[food].name}, ${categoryItems[food].price})"><img src="./${categoryItems[food].image}"></a>
+        <p>${categoryItems[food].name}</p>
+        <p>$${categoryItems[food].price}</p>
+        <p>${categoryItems[food].description}</p>
+      </div>
+    `;
+    document.getElementById("foodArea").innerHTML += newItem;
+  }
+
+}
+
+function addItemToOrder(name, price){
+  order.push({name:price});
 }

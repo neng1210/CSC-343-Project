@@ -1,39 +1,30 @@
 #background {
-    width: 100%;
-    height: 75%;
-    width: 75%;
-  }
-  
-  #body {
-    position: absolute;
-  }
-  #order {
-    position: absolute;
-    top: 0%;
-    left: 75%;
-    width: 25%;
-    height: 100%;
-    background-color: #584421;
-    color: #E8B34D;
-    font-size: 25px;
-    font-weight: 5px;
-    font-family:sans-serif;
-    text-align: center;
-  }
-  
+  width: 75%;
+}
 
-  .foodArea {
-    text-align: center;
-    vertical-align:middle;
-    font-size: 60px;
-    font-weight: bold;
-    font-family: sans-serif;
-    color:#584421;
-  }
-  
-  #title{
-    position: absolute;
-    top:5%;
-    left:5%;
-  }
-  
+#body {
+  position: absolute;
+}
+
+.foodArea {
+  text-align: center;
+  vertical-align:middle;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color:#584421;
+  overflow-y:auto
+}
+
+#foodEntry{
+  border: #584421;
+  border-width: 3px;
+  font-size: 18pt;
+}
+
+#title{
+  position: absolute;
+  top:5%;
+  left:5%;
+}
+
