@@ -181,7 +181,6 @@ function delayAndBack(){
 }
 
 function goToHTML(page){
-  console.log("Pass");
   var element = document.getElementById("changeHTML");
   element.src = page;
 }
