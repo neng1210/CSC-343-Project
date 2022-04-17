@@ -49,10 +49,9 @@ input[type="button"]:active{
 }
 
 #menu {
-  position: absolute;
-  left: 50%;
-  top: 3%;
-  width: 70%;
+  margin-top: 23px;
+  margin-right: 100px;
+  float:right;
 }
 
 #logo {
@@ -90,39 +89,8 @@ input[type="button"]:active{
   color:#584421;
 }
 
-#nigiri {
-  position: absolute;
-  top:15%;
-  left:45%;
-}
-
-#handRolls {
-  position: absolute;
-  top:15%;
-  left:25%;
-}
-
-#rolls {
-  position: absolute;
-  top:15%;
-  left:5%;
-}
-
-
-#specials {
-  position: absolute;
-  top:60%;
-  left:45%;
-}
-
-#desserts {
-  position: absolute;
-  top:60%;
-  left:25%;
-}
-
-#drinks {
-  position: absolute;
-  top:60%;
-  left:5%;
+#topContainer{
+  width:100px;
+  float: right;
+  border: solid;
 }
