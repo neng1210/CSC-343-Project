@@ -13,10 +13,11 @@
     top: 0%;
     left: 75%;
     width: 25%;
-    height: 100%;
+    height: 99.5%;
     background-color: #584421;
     color: #E8B34D;
-    font-size: 25px;
+    padding-top: px;
+    font-size: 2.5vw;
     font-family:sans-serif;
     text-align: center;
   }
@@ -24,48 +25,82 @@
   .foodArea {
     text-align: center;
     vertical-align:middle;
-    width: 15%;
-    height: 25%;
-    font-size: 25px;
+    font-size: 2vw;
     font-family: sans-serif;
-    border:3px solid #584421;
+    border: solid;
     color:#584421;
+    object-fit: contain;
+
   }
   
   #nigiri {
     position: absolute;
+    width: 17%;
+    height: 25%;
     top:15%;
     left:45%;
   }
   
   #handRolls {
     position: absolute;
+    width: 17%;
+    height: 25%;
     top:15%;
     left:25%;
   }
   
   #rolls {
     position: absolute;
+    width: 17%;
+    height: 25%;
     top:15%;
     left:5%;
+  }
+
+  #rollsLabel{
+    position: absolute;
+    max-width: 17%;
+    max-height: 30%;
+    top:42%;
+    left:11%;
   }
   
   
   #specials {
     position: absolute;
+    width: 17%;
+    height: 25%;
     top:60%;
     left:45%;
   }
   
   #desserts {
     position: absolute;
+    width: 17%;
+    height: 25%;
     top:60%;
     left:25%;
   }
   
   #drinks {
     position: absolute;
+    width: 17%;
+    height: 25%;
     top:60%;
     left:5%;
   }
-  
+  #title{
+    position: absolute;
+    top:5%;
+    left:5%;
+    text-align: center;
+    vertical-align:middle;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color:#584421;
+  }
+  #images {
+    width:100%;
+    height:100%;
+  }
