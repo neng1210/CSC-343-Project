@@ -220,7 +220,9 @@ function populateFoodPage(category){
         </a>
         <p>${categoryItems[food].name}</p>
         <p>$${categoryItems[food].price}</p>
+        <div id="orderCenter">
         <input type="button" onclick="addItemToOrder(${categoryItems[food].name},${categoryItems[food].price})" value="Add To Order" id="button" visibility="visible">
+        </div>
         <hr>
         <div id="description">${categoryItems[food].description}</div>
       </div>
