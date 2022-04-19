@@ -7,7 +7,7 @@ body {
   background-image: url("../images/Pattern_Background.jpg");
   background-size: auto;
   margin: 0%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 img {
@@ -23,6 +23,7 @@ input[type="button"] {
   color: #584421;
   margin-left: 25px;
 }
+
 input[type="button"]:hover{
   border: none;
   border-radius: 20px;

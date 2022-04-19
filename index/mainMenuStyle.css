@@ -21,7 +21,7 @@
     position: absolute;
     width: 17%;
     height: 25%;
-    top:15%;
+    top:20%;
     left:45%;
   }
 
@@ -29,7 +29,7 @@
     position: absolute;
     width: 17%;
     height: 25%;
-    top:15%;
+    top:20%;
     left:25%;
   }
 
@@ -37,18 +37,9 @@
     position: absolute;
     width: 17%;
     height: 25%;
-    top:15%;
+    top:20%;
     left:5%;
   }
-
-  #rollsLabel{
-    position: absolute;
-    max-width: 17%;
-    max-height: 30%;
-    top:42%;
-    left:11%;
-  }
-
 
   #specials {
     position: absolute;
@@ -79,7 +70,7 @@
     left:5%;
     text-align: center;
     vertical-align:middle;
-    font-size: 25px;
+    font-size: 4vw;
     font-weight: bold;
     font-family: sans-serif;
     color:#584421;

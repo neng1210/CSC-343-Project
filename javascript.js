@@ -182,6 +182,10 @@ function goToHTML(page){
   element.src = page;
 }
 
+function goBackPage(){
+  window.history.back();    
+}
+
 function populateFoodPage(category){
   var categoryItems;
 
@@ -216,7 +220,8 @@ function populateFoodPage(category){
         </a>
         <p>${categoryItems[food].name}</p>
         <p>$${categoryItems[food].price}</p>
-        <p>${categoryItems[food].description}</p>
+        <hr>
+        <div id="description">${categoryItems[food].description}</div>
       </div>
     `;
     posCounter++;
