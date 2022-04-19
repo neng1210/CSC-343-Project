@@ -7,8 +7,7 @@ body {
   background-image: url("../images/Pattern_Background.jpg");
   background-size: auto;
   margin: 0%;
-  overflow: hidden;
-  z-index: 100;
+  /* overflow: hidden; */
 }
 
 img {
@@ -114,7 +113,7 @@ input[type="button"]:active{
 }
 
 #cButton {
-  margin-top: 200px;
+  margin-top: 170px;
   margin-right:10px;
   color: #E8B34D;
   font-size: 40px;

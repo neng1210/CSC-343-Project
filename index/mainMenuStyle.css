@@ -1,4 +1,3 @@
-
   #background {
     width: 75%;
   }
@@ -15,7 +14,6 @@
     border: solid;
     font-weight: bold;
     color:#584421;
-    object-fit: contain;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   }
 
