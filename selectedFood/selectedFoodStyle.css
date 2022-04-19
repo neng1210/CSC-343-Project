@@ -18,23 +18,14 @@
 }
 
 input[type="button"] {
-  font-size: 2vw;
+  font-size: 16pt;
   font-family: Arial;
   font-weight: bold;
-  border: none;
-  border-width: 3px;
-  background-color: transparent;
-  color: #584421;
-  margin-left: 25px;
-}
-
-input[type="button"]:hover{
   border: none;
   border-radius: 20px;
   border-width: 3px;
   background-color: #584421;
   color: white;
-  margin-left: 25px;
 }
 
 input[type="button"]:active{
@@ -43,7 +34,6 @@ input[type="button"]:active{
   border-width: 3px;
   background-color: white;
   color: #584421;
-  margin-left: 25px;
 }
 
 #title{
@@ -162,7 +152,7 @@ input[type="button"]:active{
   position: absolute;
 
   top:90%;
-  left: 27.8%;
+  left: 31%;
 }
 
 #images:hover {

@@ -12,13 +12,13 @@ var foodItems={
     "tunaRoll":{
       "name": "Tuna Roll",
       "price": 4.99,
-      "description": "A simple sushi roll with only raw tuna encased in sushi rice, rolled within one sheet of nori.",
+      "description": "A simple sushi roll with only raw tuna encased...",
       "image": "../images/rolls/tunaRoll.jpg"
     },
     "pickledDaikonRoll":{
       "name": "Pickled Daikon Roll",
       "price": 3.99,
-      "description": "Sweet and sourness of the pickled daikon mixed with the sushi rice and roasted nori sheet is not like anything else in the world",
+      "description": "Sweet and sourness of the pickled daikon mixed...",
       "image": "../images/rolls/pickledDaikonRoll.jpg"
     },
     "futomaki":{
@@ -32,19 +32,19 @@ var foodItems={
     "temaki":{
       "name": "Temaki",
       "price": 8.99,
-      "description": "These are hand rolls include scallions, cucumbers, tuna, salmon.",
+      "description": "These are hand rolls include scallions, cucumbers...",
       "image": "../images/handRolls/temaki.jpg"
     },
     "spicyTuna":{
       "name": "Spicy Tuna",
       "price": 7.99,
-      "description": "Sushi grade tuna with a spicy chili sauce, a hint of mayonnaise, toasted sesame seeds, and sliced cucumber make this fabulous tuna hand roll!",
+      "description": "Sushi grade tuna with a spicy chili sauce, a hint of..",
       "image": "../images/handRolls/spicyTuna.jpg"
     },
     "softCrab":{
       "name": "Soft Crab",
       "price": 9.99,
-      "description": "A perfectly fried soft shell crab that is crunchy and superb",
+      "description": "A perfectly fried soft shell crab that is crunchy and...",
       "image": "../images/handRolls/softCrab.jpg"
     },
   },
@@ -52,13 +52,13 @@ var foodItems={
     "regNigiri":{
       "name": "Regular Nigiri",
       "price": 4.99,
-      "description": "Regular Nigiri sushi will be prepared the normal way, with the sliced fish on top of the rice",
+      "description": "Regular Nigiri sushi will be prepared the normal way, with...",
       "image": "../images/nigiri/regNigiri.jpg"
     },
     "gunkanMaki":{
       "name": "Gunkan Maki",
       "price": 5.50,
-      "description": "Gunkan maki is a nigiri sushi that is surrounded by a sheet of nori (dried seaweed)",
+      "description": "Gunkan maki is a nigiri sushi that is surrounded by a sheet...",
       "image": "../images/nigiri/gunkanMaki.jpg"
     },
     "noriRibbon":{
@@ -220,6 +220,7 @@ function populateFoodPage(category){
         </a>
         <p>${categoryItems[food].name}</p>
         <p>$${categoryItems[food].price}</p>
+        <input type="button" onclick="addItemToOrder(${categoryItems[food].name},${categoryItems[food].price})" value="Add To Order" id="button" visibility="visible">
         <hr>
         <div id="description">${categoryItems[food].description}</div>
       </div>
@@ -230,6 +231,6 @@ function populateFoodPage(category){
   document.getElementById("purchaseArea").innerHTML = items;
 }
 
-function addItemToOrder(name, price){
-  order.push({name:price});
+function addItemToOrder(foodName, price){
+  order.push(foodName,price);
 }
