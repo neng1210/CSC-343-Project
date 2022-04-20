@@ -211,16 +211,15 @@ function populateFoodPage(category){
   var position = ["topLeft","topMiddle","topRight","bottomLeft","bottomMiddle","bottomRight"];
   var items = '';
   for(const food in categoryItems){
-    name = categoryItems[food].name;
     items += `
       <div class="foodArea" id=${position[posCounter]}>
-        <a href="addItemToOrder(${categoryItems[food].name}, ${categoryItems[food].price})">
+        <a href="">
           <img src="./${categoryItems[food].image}" id="images">
         </a>
         <p>${categoryItems[food].name}</p>
         <p>$${categoryItems[food].price}</p>
         <div id="orderCenter">
-        <input type="button" value="Add To Order" id="button" onclick="addItemToOrder('${name}')">
+        <input type="button" value="Add To Order" id="button" onclick="addItemToOrder('${[categoryItems[food].name,categoryItems[food].price]}')">
         </div>
         <hr>
         <div id="description">${categoryItems[food].description}</div>
@@ -232,7 +231,7 @@ function populateFoodPage(category){
   document.getElementById("purchaseArea").innerHTML = items;
 }
 
-function addItemToOrder(foodName){
-  order.push(foodName);
-  console.log(order);
+function addItemToOrder(food){
+  parent.order.push(food);
+  console.log(parent.order);
 }
