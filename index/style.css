@@ -112,6 +112,25 @@ input[type="button"]:active{
   font-family:sans-serif;
   text-align: center;
 }
+
+#itemBox {
+  vertical-align:middle;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-family: sans-serif;
+  border:3px solid #584421;
+  color:#584421;
+}
+
+#itemBold{
+  vertical-align:middle;
+  font-size: 25px;
+  font-weight:bold;
+  font-family: sans-serif;
+  
+  color:#584421;
+}
 /* ================================== */
 .foodArea {
   text-align: center;
@@ -130,7 +149,6 @@ input[type="button"]:active{
 }
 
 #iframeOrderContainer{
-
   width: 100px;
   height: 100px;
   border: solid;

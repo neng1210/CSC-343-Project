@@ -4,6 +4,8 @@
 */
 
 order = [];
+orderHash = new Map();
+totalCost = 0;
 
 var foodItems={
   "rolls":{
@@ -221,20 +223,35 @@ function populateFoodPage(category){
 
 function addItemToOrder(food){
   parent.order.push(food);
-  // We need to Stylize this Down here. Lmao
-  var items = "";
-  var totalCost = 0;
-  for(var i = 0; i< parent.order.length; i++){
-    const foodNPrice = parent.order[i].split(",");
-    totalCost = totalCost + Number.parseFloat(foodNPrice[1]);
+
+  const foodNPrice = food.split(",");
+  var cost = Number.parseFloat(foodNPrice[1]);
+  if(parent.orderHash.has(foodNPrice[0])){
+    oldCost = parent.orderHash.get(foodNPrice[0]);
+    parent.orderHash.set(foodNPrice[0], (Number(oldCost) + Number(cost)).toFixed(2)); 
+  } else {
+    parent.orderHash.set(foodNPrice[0], cost); 
   }
-  for(var i = 0; i< parent.order.length; i++){
-    const foodNPrice = parent.order[i].split(",");
+
+  parent.totalCost = parent.totalCost + Number.parseFloat(foodNPrice[1]);
+
+  var items ="";
+  parent.orderHash.forEach((values,keys)=>{
     items += `
-      ${foodNPrice[0]} <br>
+    <div id="itemBox">
+      <div id="itemBold">${keys}</div> <br> 
+      Quantity ${values} <br>
+    </div>
     `;
-  }
+  })
   parent.document.getElementById("orderMain").innerHTML = items;
-  parent.document.getElementById("orderTotalTitle").innerHTML = "Total: " + totalCost.toFixed(2);
-  console.log(parent.order);
+  parent.document.getElementById("orderTotalTitle").innerHTML = "Total: " + parent.totalCost.toFixed(2);
+}
+
+function getValue(key, orderHash){
+  orderHash.forEach((values,keys)=>{
+    if(keys === key){
+      return values;
+    }
+  })
 }
