@@ -1,81 +1,130 @@
-  #background {
-    width: 75%;
-  }
+/*
+  Authors: Nicholas Eng, Ryu Funakoshiya, Joshua Kantarges
+  CSS for styling page
+*/
 
-  #body {
-    position: absolute;
-  }
+body {
+  background-image: url("../images/Pattern_Background.jpg");
+  background-size: auto;
+  margin: 0%;
+  overflow: hidden;
+}
 
-  .foodArea {
-    text-align: center;
-    vertical-align:middle;
-    font-size: 2vw;
-    font-family: sans-serif;
-    border: solid;
-    font-weight: bold;
-    color:#584421;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  }
+img {
+  width: 200px;
+}
 
-  #nigiri {
-    position: absolute;
-    width: 17%;
-    height: 25%;
-    top:20%;
-    left:45%;
-  }
+input[type="button"] {
+  font-size: 24px;
+  font-family: Arial;
+  border: none;
+  border-width: 3px;
+  background-color: transparent;
+  color: #584421;
+  margin-left: 25px;
+}
 
-  #handRolls {
-    position: absolute;
-    width: 17%;
-    height: 25%;
-    top:20%;
-    left:25%;
-  }
+input[type="button"]:hover{
+  border: none;
+  border-radius: 20px;
+  border-width: 3px;
+  background-color: #584421;
+  color: white;
+  margin-left: 25px;
+}
 
-  #rolls {
-    position: absolute;
-    width: 17%;
-    height: 25%;
-    top:20%;
-    left:5%;
-  }
+input[type="button"]:active{
+  border: none;
+  border-radius: 20px;
+  border-width: 3px;
+  background-color: white;
+  color: #584421;
+  margin-left: 25px;
+}
 
-  #specials {
-    position: absolute;
-    width: 17%;
-    height: 25%;
-    top:60%;
-    left:45%;
-  }
+#menuBar {
+  background-color: #ECECEC;
+  height: 10%;
+  border-bottom: solid;
+  border-color:#584421;
+  border-width: 5px;
+  z-index:1;
+}
 
-  #desserts {
-    position: absolute;
-    width: 17%;
-    height: 25%;
-    top:60%;
-    left:25%;
-  }
+#menu {
+  margin-top: 23px;
+  margin-right: 100px;
+  float:right;
+}
 
-  #drinks {
-    position: absolute;
-    width: 17%;
-    height: 25%;
-    top:60%;
-    left:5%;
-  }
-  #title{
-    position: absolute;
-    top:5%;
-    left:5%;
-    text-align: center;
-    vertical-align:middle;
-    font-size: 4vw;
-    font-weight: bold;
-    font-family: sans-serif;
-    color:#584421;
-  }
-  #images {
-    width:100%;
-    height:100%;
-  }
+#logo {
+  padding-left: 6%;
+}
+
+#changeHTML {
+  position: absolute;
+  top: 14%;
+  border: none;
+  display:block;
+}
+
+#order {
+  position: absolute;
+  left: 75%;
+  width: 25%;
+  height:100%;
+  background-color: rgba(88, 68, 33, 0.9);
+}
+
+#orderTitle {
+  margin-top: 70px;
+  color: #E8B34D;
+  font-size: 25px;
+  font-family:sans-serif;
+  text-align: center;
+}
+
+.foodArea {
+  text-align: center;
+  vertical-align:middle;
+  width: 15%;
+  height: 25%;
+  font-size: 25px;
+  font-family: sans-serif;
+  border:3px solid #584421;
+  color:#584421;
+}
+
+#topContainer{
+  width:100px;
+  float: right;
+}
+
+#iframeOrderContainer{
+
+  width: 100px;
+  height: 100px;
+  border: solid;
+  overflow: hidden;
+}
+
+#body {
+  position: absolute;
+  top: 22%;
+}
+
+#cButton {
+  margin-top: 170px;
+  margin-right:10px;
+  color: #E8B34D;
+  font-size: 40px;
+  font-family:sans-serif;
+  text-align: center;
+}
+
+#videoContainer {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}

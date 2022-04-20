@@ -133,6 +133,7 @@ function switchMainMenu(){
 }
 
 function displayOrder() {
+  console.log(order);
   string = "Your Order";
   total = 0;
   for(let i = 0; i < order.length; i++) {
