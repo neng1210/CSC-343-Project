@@ -132,8 +132,6 @@ function switchMainMenu(){
   window.location.href = "../index/index.html";
 }
 
-
-
 function orderNumber() {
   orderNumber = Math.floor(1000 + Math.random() * 9000);
   string = "Your Order Number is :<br>" + orderNumber;
@@ -148,7 +146,7 @@ function creditCard() {
 
 function thankYou() {
   document.getElementById("finish").style.visibility = "hidden";
-  window.location.replace("../checkout/thankYouPage.html");
+  document.location.href = "../checkout/thankYouPage.html";
 }
 
 function goToCheckout() {
@@ -161,7 +159,7 @@ function delayAndBack(){
   //Clear out order
   order = [];
   setTimeout(function() {
-    window.location.href = "../welcome/welcome.html";
+    parent.window.location.href = "../welcome/welcome.html";
   }, 6000);
 }
 
