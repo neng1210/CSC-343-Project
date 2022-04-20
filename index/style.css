@@ -67,7 +67,7 @@ input[type="button"]:active{
   border: none;
   display:block;
 }
-
+/* ============= ORDER ============== */
 #order {
   position: absolute;
   left: 75%;
@@ -75,15 +75,44 @@ input[type="button"]:active{
   height:100%;
   background-color: rgba(88, 68, 33, 0.9);
 }
-
 #orderTitle {
-  margin-top: 70px;
+  margin-top: 30px;
   color: #E8B34D;
-  font-size: 25px;
+  font-size: 40px;
   font-family:sans-serif;
   text-align: center;
 }
 
+#orderMain {
+  display: flex;
+  flex-direction: column-reverse;
+  width:100%;
+  height:50%;
+  overflow: auto;
+  background-color: white;
+}
+#orderTotalContainer{
+  width:100%;
+  height:10%;
+  background-color: rgba(139, 139, 139, 0.822);
+}
+#orderTotalTitle {
+  margin-left: 120px;
+  color: #ffffff;
+  font-size: 25px;
+  height:10%;
+  font-family:sans-serif;
+}
+
+#cButton {
+  margin-top: 10px;
+  margin-right:10px;
+  color: #E8B34D;
+  font-size: 40px;
+  font-family:sans-serif;
+  text-align: center;
+}
+/* ================================== */
 .foodArea {
   text-align: center;
   vertical-align:middle;
@@ -111,15 +140,6 @@ input[type="button"]:active{
 #body {
   position: absolute;
   top: 22%;
-}
-
-#cButton {
-  margin-top: 170px;
-  margin-right:10px;
-  color: #E8B34D;
-  font-size: 40px;
-  font-family:sans-serif;
-  text-align: center;
 }
 
 #videoContainer {

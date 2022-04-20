@@ -217,7 +217,7 @@ function populateFoodPage(category){
           <img src="./${categoryItems[food].image}" id="images">
         </a>
         <p>${categoryItems[food].name}</p>
-        <p>$${categoryItems[food].price}</p>
+        <p>$${categoryItems[food].price.toFixed(2)}</p>
         <div id="orderCenter">
         <input type="button" value="Add To Order" id="button" onclick="addItemToOrder('${[categoryItems[food].name,categoryItems[food].price]}')">
         </div>
@@ -233,5 +233,20 @@ function populateFoodPage(category){
 
 function addItemToOrder(food){
   parent.order.push(food);
+  // We need to Stylize this Down here. Lmao
+  var items = "";
+  var totalCost = 0;
+  for(var i = 0; i< parent.order.length; i++){
+    const foodNPrice = parent.order[i].split(",");
+    totalCost = totalCost + Number.parseFloat(foodNPrice[1]);
+  }
+  for(var i = 0; i< parent.order.length; i++){
+    const foodNPrice = parent.order[i].split(",");
+    items += `
+      ${foodNPrice[0]} <br>
+    `;
+  }
+  parent.document.getElementById("orderMain").innerHTML = items;
+  parent.document.getElementById("orderTotalTitle").innerHTML = "Total: " + totalCost.toFixed(2);
   console.log(parent.order);
 }
