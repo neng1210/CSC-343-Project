@@ -132,18 +132,7 @@ function switchMainMenu(){
   window.location.href = "../index/index.html";
 }
 
-function displayOrder() {
-  string = "Your Order";
-  total = 0;
-  for(let i = 0; i < order.length; i++) {
-    string = string+ "<br>" + order[i] + "\t\t"+ prices[order[i]];
-    total = total + prices[order[i]];
-  }
-  string = string + "<br>"
-  totalStr = "Your Total is $" + total;
-  document.getElementById("order").innerHTML = string;
-  document.getElementById("total").innerHTML = totalStr;
-}
+
 
 function orderNumber() {
   orderNumber = Math.floor(1000 + Math.random() * 9000);
@@ -159,12 +148,13 @@ function creditCard() {
 
 function thankYou() {
   document.getElementById("finish").style.visibility = "hidden";
-  window.location.href = "../checkout/thankYouPage.html";
+  window.location.replace("../checkout/thankYouPage.html");
 }
 
 function goToCheckout() {
   document.getElementById("cButton").style.visibility = "hidden";
-  window.location.href = "../checkout/checkout.html";
+  var element = document.getElementById("changeHTML");
+  element.src = "../checkout/checkout.html";
 }
 
 function delayAndBack(){

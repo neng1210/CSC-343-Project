@@ -3,19 +3,8 @@
   CSS for styling page
 */
 
-body {
-  background-image: url("../images/Pattern_Background.jpg");
-  background-size: auto;
-  margin: 0%;
-}
-
 #body {
-  position: absolute;
-  top: 14%;
-}
-
-img {
-  width: 200px;
+  width: 75%;
 }
 
 input[type="button"] {
