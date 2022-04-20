@@ -3,8 +3,6 @@
   This contains javascript functions so the page can change dynamically
 */
 
-// just some hard coded thing so i can test checkout
-// will probably be changed to different data struture later
 order = [];
 
 var foodItems={
@@ -183,7 +181,7 @@ function goToHTML(page){
 }
 
 function goBackPage(){
-  window.history.back();    
+  window.history.back();
 }
 
 function populateFoodPage(category){
@@ -213,6 +211,7 @@ function populateFoodPage(category){
   var position = ["topLeft","topMiddle","topRight","bottomLeft","bottomMiddle","bottomRight"];
   var items = '';
   for(const food in categoryItems){
+    name = categoryItems[food].name;
     items += `
       <div class="foodArea" id=${position[posCounter]}>
         <a href="addItemToOrder(${categoryItems[food].name}, ${categoryItems[food].price})">
@@ -221,7 +220,7 @@ function populateFoodPage(category){
         <p>${categoryItems[food].name}</p>
         <p>$${categoryItems[food].price}</p>
         <div id="orderCenter">
-        <input type="button" onclick="addItemToOrder(${categoryItems[food].name},${categoryItems[food].price})" value="Add To Order" id="button" visibility="visible">
+        <input type="button" value="Add To Order" id="button" onclick="addItemToOrder('${name}')">
         </div>
         <hr>
         <div id="description">${categoryItems[food].description}</div>
@@ -233,6 +232,7 @@ function populateFoodPage(category){
   document.getElementById("purchaseArea").innerHTML = items;
 }
 
-function addItemToOrder(foodName, price){
-  order.push(foodName,price);
+function addItemToOrder(foodName){
+  order.push(foodName);
+  console.log(order);
 }
