@@ -50,11 +50,11 @@ var foodItems={
     },
   },
   "nigiri":{
-    "regNigiri":{
-      "name": "Regular Nigiri",
-      "price": 4.99,
-      "description": "Regular Nigiri sushi will be prepared the normal way, with...",
-      "image": "../images/nigiri/regNigiri.jpg"
+    "Tuna":{
+      "name": "Tuna Nigiri",
+      "price": 8.99,
+      "description": "High Quality Nigiri that will melt in your mouth...",
+      "image": "../images/nigiri/Tuna.jpg"
     },
     "gunkanMaki":{
       "name": "Gunkan Maki",
@@ -62,11 +62,11 @@ var foodItems={
       "description": "Gunkan maki is a nigiri sushi that is surrounded by a sheet...",
       "image": "../images/nigiri/gunkanMaki.jpg"
     },
-    "noriRibbon":{
-      "name": "Nori Ribbon",
+    "Tamago":{
+      "name": "Tamago Nigiri",
       "price": 3.50,
-      "description": "A thin strip of nori wrapped around the nigiri sushi",
-      "image": "../images/nigiri/noriRibbon.jpg"
+      "description": "A thin strip of nori wrapped around the sweet egg",
+      "image": "../images/nigiri/Tamago.jpg"
     },
   },
   "drinks":{
