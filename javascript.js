@@ -251,7 +251,7 @@ function addItemToOrder(food){
   parent.document.getElementById("orderMain").innerHTML = items;
   parent.document.getElementById("orderTotalTitle").innerHTML = "Total: $" + parent.totalCost.toFixed(2);
 
-  var messageBody = document.querySelector('#orderMain');
+  var messageBody = parent.document.querySelector('#orderMain');
   messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 }
 
