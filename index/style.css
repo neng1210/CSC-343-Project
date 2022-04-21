@@ -92,7 +92,7 @@ input[type="button"]:active{
 #orderTotalContainer{
   width:100%;
   height:10%;
-  background-color: #9c8151;
+  background-color: rgba(88, 68, 33, 0.9);
 }
 #orderTotalTitle {
   padding-top:4%;
@@ -100,6 +100,7 @@ input[type="button"]:active{
   color: #ffffff;
   font-size: 30px;
   font-family:sans-serif;
+  opacity:100%;
 }
 
 #cButton {

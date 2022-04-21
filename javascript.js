@@ -26,7 +26,7 @@ var foodItems={
       "name": "California Roll",
       "price": 3.99,
       "description": "A classic sush with various ingredience.",
-      "image": "../images/rolls/futomaki.jpg"
+      "image": "../images/rolls/californiaRoll.jpg"
     },
   },
   "handRolls":{
