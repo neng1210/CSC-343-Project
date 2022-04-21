@@ -206,7 +206,7 @@ function populateFoodPage(category){
         <a href="">
           <img src="./${categoryItems[food].image}" id="images">
         </a>
-        <p>${categoryItems[food].name}</p>
+        <div id="foodName">${categoryItems[food].name}</div>
         <p>$${categoryItems[food].price.toFixed(2)}</p>
         <div id="orderCenter">
         <input type="button" value="Add To Order" id="button" onclick="addItemToOrder('${[categoryItems[food].name,categoryItems[food].price]}')">

@@ -1,12 +1,16 @@
   #background {
     width: 75%;
+    opacity:90%;
   }
 
   #body {
     position: absolute;
   }
-
+  #foodName{
+    font-size: 2vw;
+  }
   .foodArea {
+    border-radius: 20px;
     text-align: center;
     vertical-align:middle;
     font-size: 2vw;
@@ -74,8 +78,142 @@
     font-weight: bold;
     font-family: sans-serif;
     color:#584421;
+    z-index: 1;
   }
   #images {
     width:100%;
     height:100%;
+    border-radius:16.9px;
+  }
+
+  #topLeft {
+    position: absolute;
+    width: 17%;
+    height: 25%;
+    top:20%;
+    left:5%;
+  }
+  
+  #TL_Back{
+    position: absolute;
+    width: 17.26%;
+    height: 37%;
+    top:20%;
+    left:5%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 24px;
+    border-width: 0.1px;
+    color:#584421;
+    background-color: #f0e1c8;
+  }
+  
+  #topMiddle {
+    position: absolute;
+    width: 17%;
+    height: 25%;
+    top:20%;
+    left:25%;
+  }
+  
+  #TM_Back{
+    position: absolute;
+    width: 17.26%;
+    height: 37%;
+    top:20%;
+    left:25%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 24px;
+    border-width: 0.1px;
+    color:#584421;
+    background-color: #f0e1c8;
+  }
+  
+  #topRight {
+    position: absolute;
+    width: 17%;
+    height: 25%;
+    top:20%;
+    left:45%;
+  }
+  
+  #TR_Back{
+    position: absolute;
+    width: 17.26%;
+    height: 37%;
+    top:20%;
+    left:45%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 24px;
+    border-width: 0.1px;
+    color:#584421;
+    background-color: #f0e1c8;
+  }
+  
+  #bottomLeft {
+    position: absolute;
+    width: 17%;
+    height: 25%;
+    top:60%;
+    left:5%;
+  }
+
+  #BL_Back{
+    position: absolute;
+    width: 17.26%;
+    height: 37%;
+    top:60%;
+    left:5%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 24px;
+    border-width: 0.1px;
+    color:#584421;
+    background-color: #f0e1c8;
+  }
+  
+  #bottomMiddle {
+    position: absolute;
+    width: 17%;
+    height: 25%;
+    top:60%;
+    left:25%;
+  }
+
+  #BM_Back{
+    position: absolute;
+    width: 17.26%;
+    height: 37%;
+    top:60%;
+    left:25%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 24px;
+    border-width: 0.1px;
+    color:#584421;
+    background-color: #f0e1c8;
+  }
+
+  #bottomRight {
+    position: absolute;
+    width: 17%;
+    height: 25%;
+    top:60%;
+    left:45%;
+  }
+
+  #BR_Back{
+    position: absolute;
+    width: 17.26%;
+    height: 37%;
+    top:60%;
+    left:45%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-radius: 24px;
+    border-width: 0.1px;
+    color:#584421;
+    background-color: #f0e1c8;
   }
