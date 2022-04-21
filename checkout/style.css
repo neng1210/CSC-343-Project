@@ -8,7 +8,7 @@
 }
 
 input[type="button"] {
-  font-size: 24px;
+  font-size: 2vw;
   font-family: Arial;
   border: none;
   border-width: 3px;
@@ -16,6 +16,7 @@ input[type="button"] {
   color: #584421;
   margin-left: 25px;
 }
+
 input[type="button"]:hover{
   border: none;
   border-radius: 20px;
@@ -108,7 +109,7 @@ input[type="button"]:active{
 #finish {
   position: absolute;
   top: 50%;
-  left: 31%;
+  left: 27%;
   font-size: 40px;
   font-family:sans-serif;
   text-align: center;
