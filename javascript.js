@@ -5,7 +5,7 @@
 
 order = [];
 orderHash = new Map();
-totalCost = 0;
+totalCost = 0.00;
 
 var foodItems={
   "rolls":{
@@ -96,7 +96,7 @@ var foodItems={
       "image": "../images/desserts/mochi.jpg"
     },
     "greenTea":{
-      "name": "Green Tea Ice Cream",
+      "name": "Green Tea Ice",
       "price": 4.39,
       "description": "Japanese Green Tea Ice Cream",
       "image": "../images/desserts/greenTea.jpg"
@@ -203,9 +203,8 @@ function populateFoodPage(category){
   for(const food in categoryItems){
     items += `
       <div class="foodArea" id=${position[posCounter]}>
-        <a href="">
-          <img src="./${categoryItems[food].image}" id="images">
-        </a>
+
+        <img src="./${categoryItems[food].image}" onclick="addItemToOrder('${[categoryItems[food].name,categoryItems[food].price]}')" id="images">
         <div id="foodName">${categoryItems[food].name}</div>
         <p>$${categoryItems[food].price.toFixed(2)}</p>
         <div id="orderCenter">
@@ -230,7 +229,7 @@ function addItemToOrder(food){
     oldCost = parent.orderHash.get(foodNPrice[0]);
     parent.orderHash.set(foodNPrice[0], (Number(oldCost) + Number(cost)).toFixed(2)); 
   } else {
-    parent.orderHash.set(foodNPrice[0], cost); 
+    parent.orderHash.set(foodNPrice[0], (Number(cost)).toFixed(2)); 
   }
 
   parent.totalCost = parent.totalCost + Number.parseFloat(foodNPrice[1]);
@@ -239,13 +238,14 @@ function addItemToOrder(food){
   parent.orderHash.forEach((values,keys)=>{
     items += `
     <div id="itemBox">
-      <div id="itemBold">${keys}</div> <br> 
-      Quantity ${values} <br>
+      <div id="itemNameBold">${keys}</div>
+      <div id="itemQuantityBold">Quantity ${values} </div>
+      <div id="itemPriceBold">$${values}</div>
     </div>
     `;
   })
   parent.document.getElementById("orderMain").innerHTML = items;
-  parent.document.getElementById("orderTotalTitle").innerHTML = "Total: " + parent.totalCost.toFixed(2);
+  parent.document.getElementById("orderTotalTitle").innerHTML = "Total: $" + parent.totalCost.toFixed(2);
 }
 
 function getValue(key, orderHash){

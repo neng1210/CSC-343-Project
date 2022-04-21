@@ -98,9 +98,9 @@ input[type="button"]:active{
 }
 #orderTotalTitle {
   padding-top:4%;
-  margin-left: 120px;
+  margin-left: 24%;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 30px;
   font-family:sans-serif;
 }
 
@@ -116,19 +116,38 @@ input[type="button"]:active{
 #itemBox {
   vertical-align:middle;
   padding-top: 20px;
-  padding-bottom: 30px;
+  width:98%;
   font-size: 25px;
   font-family: sans-serif;
   border:3px solid #584421;
   color:#584421;
 }
 
-#itemBold{
+#itemNameBold{
   vertical-align:middle;
   font-size: 25px;
   font-weight:bold;
   font-family: sans-serif;
-  
+  padding-left:10px;
+  color:#584421;
+}
+
+#itemQuantityBold{
+  vertical-align:middle;
+  font-size: 15px;
+  font-weight:bold;
+  font-family: sans-serif;
+  padding-left:10px;
+  color:#584421;
+}
+
+#itemPriceBold{
+  vertical-align:middle;
+  font-size: 27px;
+  padding-bottom: 10px;
+  font-weight:bold;
+  font-family: sans-serif;
+  padding-left:190px;
   color:#584421;
 }
 /* ================================== */
@@ -165,4 +184,19 @@ input[type="button"]:active{
   width: 100%;
   height: 100%;
   z-index: -100;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #9c8151; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
 }

@@ -20,6 +20,12 @@
     color:#584421;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   }
+  .foodArea:active {
+    color:white;
+  }
+  .foodArea:hover {
+    color:#be9f68;
+  }
 
   #nigiri {
     position: absolute;
