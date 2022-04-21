@@ -5,6 +5,7 @@
 
 order = [];
 orderHash = new Map();
+orderQuantity = new Map();
 totalCost = 0.00;
 
 var foodItems={
@@ -228,8 +229,11 @@ function addItemToOrder(food){
   if(parent.orderHash.has(foodNPrice[0])){
     oldCost = parent.orderHash.get(foodNPrice[0]);
     parent.orderHash.set(foodNPrice[0], (Number(oldCost) + Number(cost)).toFixed(2)); 
+    oldCount = parent.orderQuantity.get(foodNPrice[0]) + 1;
+    parent.orderQuantity.set(foodNPrice[0], oldCount);
   } else {
     parent.orderHash.set(foodNPrice[0], (Number(cost)).toFixed(2)); 
+    parent.orderQuantity.set(foodNPrice[0],1);
   }
 
   parent.totalCost = parent.totalCost + Number.parseFloat(foodNPrice[1]);
@@ -239,13 +243,16 @@ function addItemToOrder(food){
     items += `
     <div id="itemBox">
       <div id="itemNameBold">${keys}</div>
-      <div id="itemQuantityBold">Quantity ${values} </div>
+      <div id="itemQuantityBold">Quantity: ${parent.orderQuantity.get(keys)} </div>
       <div id="itemPriceBold">$${values}</div>
     </div>
     `;
   })
   parent.document.getElementById("orderMain").innerHTML = items;
   parent.document.getElementById("orderTotalTitle").innerHTML = "Total: $" + parent.totalCost.toFixed(2);
+
+  var messageBody = document.querySelector('#orderMain');
+  messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 }
 
 function getValue(key, orderHash){
