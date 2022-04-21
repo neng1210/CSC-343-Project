@@ -16,16 +16,16 @@ var foodItems={
       "description": "A simple sushi roll with only raw tuna encased...",
       "image": "../images/rolls/tunaRoll.jpg"
     },
-    "pickledDaikonRoll":{
-      "name": "Pickled Daikon Roll",
-      "price": 3.99,
-      "description": "Sweet and sourness of the pickled daikon mixed...",
-      "image": "../images/rolls/pickledDaikonRoll.jpg"
-    },
-    "futomaki":{
-      "name": "Futomaki",
+    "dragonRoll":{
+      "name": "Dragon Roll",
       "price": 6.99,
-      "description": "Futomaki is like a normal maki roll but bigger.",
+      "description": "Topped with delicious avocado...",
+      "image": "../images/rolls/dragonRoll.jpg"
+    },
+    "californiaRoll":{
+      "name": "California Roll",
+      "price": 3.99,
+      "description": "A classic sush with various ingredience.",
       "image": "../images/rolls/futomaki.jpg"
     },
   },
